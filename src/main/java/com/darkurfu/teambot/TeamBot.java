@@ -10,6 +10,31 @@ public class TeamBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         if (update.hasMessage() && update.getMessage().hasText()) {
+
+            switch(update.getMessage().getText()) {
+                case("/create_member"):{
+                    break;
+                }
+                case("/create_team"):{
+                    break;
+                }
+                case("/update_info"):{
+                    break;
+                }
+                case("/find_team"):{
+                    break;
+                }
+                case("/find_member"):{
+                    break;
+                }
+                case("/match"):{
+                    break;
+                }
+                case("/stop"):{
+                    break;
+                }
+            }
+
             String message_text = update.getMessage().getText();
             long chat_id = update.getMessage().getChatId();
 
@@ -23,6 +48,8 @@ public class TeamBot extends TelegramLongPollingBot {
                 e.printStackTrace();
             }
         }
+
+
     }
 
     @Override
